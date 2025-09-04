@@ -52,18 +52,23 @@ def traduzir_frase(frase):
 # Responsável: interface de uso (CLI → Web)
 # Criar CLI interativa e evoluir para API REST
 # ----------------------------------------------------------
+# contador global de traduções
+contador_traducoes = 0
+
 def main():
+    global contador_traducoes
     print("=== Tradutor Cultural com IA ===")
     while True:
         frase = input("Digite uma frase (ou 'sair' para encerrar): ")
         if frase.lower() == "sair":
+            print(f"Total de traduções realizadas: {contador_traducoes}" + "," + " Isso reflete o quanto os turistas usam nosso app para aprender gírias locais")
             break
 
         resultado = traduzir_frase(frase)
         for explicacao in resultado:
             print(explicacao)
+        contador_traducoes += 1
         print("-" * 40)
-
 
 if __name__ == "__main__":
     main()
