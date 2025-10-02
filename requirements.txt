@@ -1,4 +1,3 @@
 spacy
 pandas
-pandas
-spacy
+kivy
