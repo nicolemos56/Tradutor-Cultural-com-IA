@@ -4,7 +4,7 @@ expertMode = true
 
 [nix]
 channel = "stable-25_05"
-packages = ["glibcLocales", "xorg.xvfb", "mesa", "libGL", "mtdev"]
+packages = ["glibcLocales", "xorg.xvfb", "mesa", "libGL", "mtdev", "openssh"]
 
 [workflows]
 runButton = "Project"
