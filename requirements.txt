@@ -1,2 +1,4 @@
 spacy
 pandas
+pandas
+spacy
